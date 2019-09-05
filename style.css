@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #666;
 }
 html {
   height: 100%;
@@ -11,10 +12,10 @@ body {
   min-height: 100%;
   background: #dbdeff;
   padding-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
 }
 footer {
   text-align: center;
-  text-justify: inter-word;
 }
 
 .container {
@@ -41,12 +42,12 @@ footer {
   border-radius: 50%;
 }
 .full-name {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   border-bottom: 1px solid #999;
-  margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
+  margin: 0 0 12px 0;
+  padding: 0 0 12px 0;
 }
 
 .first-name {
@@ -62,6 +63,7 @@ footer {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: justify;
 }
 
 .wrap {
@@ -81,8 +83,8 @@ footer {
   letter-spacing: 1px;
   color: #0e1c5a;
   font-weight: bold;
-  font-size: 15px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
   margin: 10px 0px 10px 0px;
   text-transform: uppercase;
 }
@@ -90,20 +92,76 @@ footer {
 .contents {
   margin-bottom: 20px;
   text-align: justify;
-  text-justify: inter-word;
 }
 .contents h3 {
   color: #245cab;
 }
-.period {
+.contents p {
+  line-height: 1.6em;
+}
+.contents p span {
   text-transform: uppercase;
   font-size: 12px;
-  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua',
-    Georgia, serif;
+  font-family: 'Raleway', sans-serif;
 }
 .sidebar {
   padding-left: 20px;
   flex: 1;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+
+  max-width: 180px;
+}
+
+.contact-form {
+  max-width: 400px;
+  line-height: 2.4em;
+  margin: 20px 100px;
+  padding: 20px;
+  border: #666 1px solid;
+}
+.contact-form h2 {
+  text-align: center;
+  color: #245cab;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.contact-form p {
+  text-align: center;
+  color: #245cab;
+  font-weight: bold;
+  font-size: 14px;
+}
+.contact-form .form-group {
+  margin-top: 5px;
+}
+
+.contact-form .form-group label {
+  font-size: 14px;
+  display: block;
+  color: #666;
+}
+
+.contact-form .form-group input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  background: #0d55f1;
+  color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-style: none;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0b4cd8;
 }
